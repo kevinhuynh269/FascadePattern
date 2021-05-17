@@ -1,12 +1,9 @@
-﻿using System;
-
-namespace FascadePatternPractice
+﻿namespace FascadePatternPractice
 {
     public class Product
     {
         public string Name { get; set; }
-        public Decimal Pricing { get; set; }
+        public decimal Pricing { get; set; }
         public int Quantity { get; set; }
-        
     }
 }
