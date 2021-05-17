@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Text;
 
 namespace FascadePatternPractice
 {
@@ -14,6 +15,19 @@ namespace FascadePatternPractice
         public void Remove(Shipment shipment)
         {
             PendingShipments.Remove(shipment);
+        }
+
+        // public List<Shipment> GetShipments
+        // {
+        //     get { return PendingShipments; }
+        // }
+
+        public string ListToString() {
+            StringBuilder builder = new StringBuilder();
+            foreach(var item in PendingShipments){
+                builder.Append($"Address: {item.Address.ToString()} Product: {item.Product.ToString()} + \n");
+            }
+            return builder.ToString();
         }
     }
 }
