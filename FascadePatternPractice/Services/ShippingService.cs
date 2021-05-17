@@ -25,7 +25,7 @@ namespace FascadePatternPractice
         public string ListToString() {
             StringBuilder builder = new StringBuilder();
             foreach(var item in PendingShipments){
-                builder.Append($"Address: {item.Address.ToString()} Product: {item.Product.ToString()} + \n");
+                builder.Append($"Address: {item.Address.ToString()} Product: {item.Product.ToString()} \n");
             }
             return builder.ToString();
         }

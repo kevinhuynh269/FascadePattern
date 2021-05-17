@@ -25,7 +25,7 @@ namespace FascadePatternPractice
         public string ListToString(){
             StringBuilder builder = new StringBuilder();
             foreach(var item in ProductInventory){
-                builder.Append($"Item: {item.Name} Quantity: {item.Quantity} Pricing: {item.Pricing} Total Price: {item.Quantity * item.Pricing} + \n");
+                builder.Append($"Item: {item.Name} Quantity: {item.Quantity} Pricing: {item.Pricing} Total Price: {item.Quantity * item.Pricing} \n");
             }
             return builder.ToString();
         }
